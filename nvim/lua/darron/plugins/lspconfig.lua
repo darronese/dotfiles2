@@ -175,6 +175,9 @@ return {
           lint.try_lint()
         end,
       })
+      --Set pylint to work in virtualenv
+      require('lint').linters.pylint.cd = 'python'
+      require('lint').linters.pylint.args = {'-m', 'pylint', '-f', 'json'}
 
       vim.keymap.set("n", "<leader>nl", function()
         lint.try_lint()

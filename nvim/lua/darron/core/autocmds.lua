@@ -25,10 +25,3 @@ for lang, data in pairs(lang_maps) do
     )
 end
 
-vim.cmd([[autocmd FileType * set formatoptions-=ro]])
-vim.cmd [[
-  function! GoToWorkspace()
-    execute "cd ~/.config/workspace/PA5/"
-  endfunction
-  command! Workspace :call GoToWorkspace()
-]]
