@@ -1,5 +1,4 @@
-require ("darron.core.autocmds")
-require ("darron.core.keymaps")
-require ("darron.core.options")
-require ("darron.lazy")
-
+require ("settings.options")
+require ("settings.keymaps")
+require ("settings.autocmds")
+require ("config.lazy")
